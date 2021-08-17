@@ -11,6 +11,10 @@ mybatis:
   type-aliases-package: com.pncalbl.sportplay.pojo
   mapper-locations: classpath:mapper/*.xml
 
+#是否开启 swagger-ui
+swagger:
+  enabled: true
+
 server:
   port: 9000
 
