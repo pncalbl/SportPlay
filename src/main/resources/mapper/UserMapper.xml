@@ -10,4 +10,21 @@
 		  AND password = #{password}
 		  AND state = 1
 	</select>
+	
+	<select id="getAllUser" resultType="com.pncalbl.sportplay.pojo.User">
+		SELECT *
+		FROM easyuser
+		<if test="username != null">
+			WHERE username LIKE #{username}
+		</if>
+		LIMIT #{pageStart}, #{pageSize}
+	</select>
+	
+	<select id="getUserCounts" resultType="java.lang.Integer">
+		SELECT count(*)
+		FROM easyuser
+		<if test="username != null">
+			WHERE username LIKE #{username}
+		</if>
+	</select>
 </mapper>

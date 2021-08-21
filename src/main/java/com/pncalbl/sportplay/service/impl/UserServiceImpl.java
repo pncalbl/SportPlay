@@ -6,6 +6,8 @@ import com.pncalbl.sportplay.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author pncalbl
  * @date 2021/8/21 20:35
@@ -21,5 +23,15 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User getUserByMsg(String username, String password) {
 		return userDao.getUserByMsg(username, password);
+	}
+
+	@Override
+	public List<User> getAllUser(String username, int pageStart, int pageSize) {
+		return userDao.getAllUser(username, pageStart, pageSize);
+	}
+
+	@Override
+	public Integer getUserCounts(String username) {
+		return userDao.getUserCounts(username);
 	}
 }
