@@ -16,7 +16,7 @@ import java.util.HashMap;
  * @author pncalbl
  * @date 2021/8/17 21:33
  * @e-mail pncalbl@qq.com
- * @description 登录控制
+ * @description 登录管理
  **/
 @RestController
 @Api(tags = "登录管理")

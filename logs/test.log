@@ -1,16 +1,16 @@
-[31m2021-08-17 22:36:49[m [34m[main][m [36mINFO [m:[32mStarting SportPlayApplication using Java 1.8.0_281 on pncalbl-pc with PID 8468 (D:\PNCA\Project\ProjectTraining\SportPlay\target\classes started by pncalbl in D:\PNCA\Project\ProjectTraining\SportPlay)
-[m[31m2021-08-17 22:36:49[m [34m[main][m [36mINFO [m:[32mNo active profile set, falling back to default profiles: default
-[m[31m2021-08-17 22:36:50[m [34m[main][m [36mINFO [m:[32mInitializing ProtocolHandler ["http-nio-9000"]
-[m[31m2021-08-17 22:36:50[m [34m[main][m [36mINFO [m:[32mStarting service [Tomcat]
-[m[31m2021-08-17 22:36:50[m [34m[main][m [36mINFO [m:[32mStarting Servlet engine: [Apache Tomcat/9.0.45]
-[m[31m2021-08-17 22:36:50[m [34m[main][m [36mINFO [m:[32mLoaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
-[m[31m2021-08-17 22:36:50[m [34m[main][m [36mINFO [m:[32mAPR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-[m[31m2021-08-17 22:36:50[m [34m[main][m [36mINFO [m:[32mAPR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-[m[31m2021-08-17 22:36:50[m [34m[main][m [36mINFO [m:[32mOpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-[m[31m2021-08-17 22:36:50[m [34m[main][m [36mINFO [m:[32mInitializing Spring embedded WebApplicationContext
-[m[31m2021-08-17 22:36:51[m [34m[main][m [36mINFO [m:[32mStarting ProtocolHandler ["http-nio-9000"]
-[m[31m2021-08-17 22:36:51[m [34m[main][m [36mINFO [m:[32mStarted SportPlayApplication in 2.113 seconds (JVM running for 3.457)
-[m[31m2021-08-17 22:37:21[m [34m[http-nio-9000-exec-1][m [36mINFO [m:[32mInitializing Spring DispatcherServlet 'dispatcherServlet'
-[m[31m2021-08-17 22:37:21[m [34m[http-nio-9000-exec-1][m [36mINFO [m:[32mHikariPool-1 - Starting...
-[m[31m2021-08-17 22:37:22[m [34m[http-nio-9000-exec-1][m [36mINFO [m:[32mHikariPool-1 - Start completed.
+[31m2021-08-21 20:02:00[m [34m[main][m [36mINFO [m:[32mStarting SportPlayApplication using Java 1.8.0_281 on pncalbl-pc with PID 23884 (D:\PNCA\Project\ProjectTraining\SportPlay\target\classes started by pncalbl in D:\PNCA\Project\ProjectTraining\SportPlay)
+[m[31m2021-08-21 20:02:00[m [34m[main][m [36mINFO [m:[32mNo active profile set, falling back to default profiles: default
+[m[31m2021-08-21 20:02:01[m [34m[main][m [36mINFO [m:[32mInitializing ProtocolHandler ["http-nio-9000"]
+[m[31m2021-08-21 20:02:01[m [34m[main][m [36mINFO [m:[32mStarting service [Tomcat]
+[m[31m2021-08-21 20:02:01[m [34m[main][m [36mINFO [m:[32mStarting Servlet engine: [Apache Tomcat/9.0.45]
+[m[31m2021-08-21 20:02:01[m [34m[main][m [36mINFO [m:[32mLoaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+[m[31m2021-08-21 20:02:01[m [34m[main][m [36mINFO [m:[32mAPR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+[m[31m2021-08-21 20:02:01[m [34m[main][m [36mINFO [m:[32mAPR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[m[31m2021-08-21 20:02:01[m [34m[main][m [36mINFO [m:[32mOpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+[m[31m2021-08-21 20:02:01[m [34m[main][m [36mINFO [m:[32mInitializing Spring embedded WebApplicationContext
+[m[31m2021-08-21 20:02:02[m [34m[main][m [36mINFO [m:[32mStarting ProtocolHandler ["http-nio-9000"]
+[m[31m2021-08-21 20:02:02[m [34m[main][m [36mINFO [m:[32mStarted SportPlayApplication in 2.457 seconds (JVM running for 4.484)
+[m[31m2021-08-21 20:02:07[m [34m[http-nio-9000-exec-1][m [36mINFO [m:[32mInitializing Spring DispatcherServlet 'dispatcherServlet'
+[m[31m2021-08-21 20:02:07[m [34m[http-nio-9000-exec-3][m [36mINFO [m:[32mHikariPool-1 - Starting...
+[m[31m2021-08-21 20:02:08[m [34m[http-nio-9000-exec-3][m [36mINFO [m:[32mHikariPool-1 - Start completed.
 [m
