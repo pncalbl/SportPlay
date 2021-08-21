@@ -1,8 +1,8 @@
 package com.pncalbl.sportplay.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.pncalbl.sportplay.dao.UserDao;
 import com.pncalbl.sportplay.pojo.User;
+import com.pncalbl.sportplay.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,13 +23,14 @@ import java.util.HashMap;
 public class LoginController {
 
 	@Autowired
-	private UserDao userDao;
+	private UserService userService;
+
 
 	@ApiOperation("登录")
 	@RequestMapping("/login")
 	public String login(@RequestBody User user) {
 		String flag = "error";
-		User us = userDao.getUserByMsg(user.getUsername(), user.getPassword());
+		User us = userService.getUserByMsg(user.getUsername(), user.getPassword());
 		System.out.println("user: " + us);
 		HashMap<String, Object> res = new HashMap<>();
 		if (us != null) {

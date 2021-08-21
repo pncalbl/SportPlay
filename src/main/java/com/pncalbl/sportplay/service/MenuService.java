@@ -1,19 +1,17 @@
-package com.pncalbl.sportplay.dao;
+package com.pncalbl.sportplay.service;
 
 import com.pncalbl.sportplay.pojo.MainMenu;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 /**
  * @author pncalbl
- * @date 2021/8/18 21:34
+ * @date 2021/8/21 20:33
  * @e-mail pncalbl@qq.com
- * @description 菜单数据访问
+ * @description 菜单管理服务接口
  **/
 
-@Repository
-public interface MenuDao {
+public interface MenuService {
 	/**
 	 * 返回菜单列表
 	 * @return 菜单列表

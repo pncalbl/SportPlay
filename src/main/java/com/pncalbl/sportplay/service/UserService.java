@@ -1,22 +1,18 @@
-package com.pncalbl.sportplay.dao;
+package com.pncalbl.sportplay.service;
 
 import com.pncalbl.sportplay.pojo.User;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 /**
  * @author pncalbl
- * @date 2021/8/17 22:02
+ * @date 2021/8/21 20:33
  * @e-mail pncalbl@qq.com
- * @description 用户数据访问
+ * @description 登录管理服务接口
  **/
 
-@Repository
-public interface UserDao {
-
+public interface UserService {
 	/**
 	 * 通过用户名和密码查询用户是否存在
-	 *
 	 * @param username 用户名
 	 * @param password 密码
 	 * @return 用户对象 / null
