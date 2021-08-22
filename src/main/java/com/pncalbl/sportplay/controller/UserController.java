@@ -5,6 +5,7 @@ import com.pncalbl.sportplay.pojo.QueryInfo;
 import com.pncalbl.sportplay.pojo.User;
 import com.pncalbl.sportplay.service.UserService;
 import io.swagger.annotations.Api;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -42,8 +43,17 @@ public class UserController {
 		return gson.toJson(res);
 	}
 
-	@RequestMapping("/")
+	@RequestMapping("/userState")
 	public String updateUserState(@RequestParam("id") Integer id, @RequestParam("state") Boolean state) {
-		return "ok";
+		int row = userService.updateState(id, state);
+		return row > 0 ? "success" : "error";
+	}
+
+	@RequestMapping("/addUser")
+	public String addUser(@RequestBody User user) {
+		user.setRole("普通用户");
+		user.setState(false);
+		int row = userService.addUser(user);
+		return row > 0 ? "success" : "error";
 	}
 }

@@ -15,6 +15,7 @@ import java.util.List;
 public interface UserService {
 	/**
 	 * 通过用户名和密码查询用户是否存在
+	 *
 	 * @param username 用户名
 	 * @param password 密码
 	 * @return 用户对象 / null
@@ -33,6 +34,7 @@ public interface UserService {
 
 	/**
 	 * 获取用户总数
+	 *
 	 * @param username 用户名
 	 * @return 用户总数
 	 */
@@ -43,6 +45,16 @@ public interface UserService {
 	 *
 	 * @param id    用户 id
 	 * @param state 用户状态: 0-无效,1-有效
+	 * @return 受影响的行数
 	 */
-	void updateState(Integer id, Boolean state);
+	int updateState(Integer id, Boolean state);
+
+
+	/**
+	 * 添加用户
+	 *
+	 * @param user 用户对象
+	 * @return 受影响的行数
+	 */
+	int addUser(User user);
 }

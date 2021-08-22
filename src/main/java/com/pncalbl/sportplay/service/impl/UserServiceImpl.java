@@ -3,9 +3,9 @@ package com.pncalbl.sportplay.service.impl;
 import com.pncalbl.sportplay.dao.UserDao;
 import com.pncalbl.sportplay.pojo.User;
 import com.pncalbl.sportplay.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -17,7 +17,7 @@ import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
-	@Autowired
+	@Resource
 	private UserDao userDao;
 
 	@Override
@@ -36,8 +36,13 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public void updateState(Integer id, Boolean state) {
-		userDao.updateState(id, state);
+	public int updateState(Integer id, Boolean state) {
+		return userDao.updateState(id, state);
+	}
+
+	@Override
+	public int addUser(User user) {
+		return userDao.addUser(user);
 	}
 
 }

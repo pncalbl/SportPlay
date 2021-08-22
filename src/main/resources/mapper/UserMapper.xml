@@ -33,4 +33,9 @@
 		SET state = #{state}
 		WHERE id = #{id}
 	</update>
+	
+	<insert id="addUser">
+		INSERT INTO easyuser(username, password, email, role, state)
+			VALUE (#{username}, #{password}, #{email}, #{role}, #{state})
+	</insert>
 </mapper>

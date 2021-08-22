@@ -49,6 +49,15 @@ public interface UserDao {
 	 *
 	 * @param id    用户 id
 	 * @param state 用户状态: 0-无效,1-有效
+	 * @return 受影响的行数
 	 */
-	void updateState(Integer id, Boolean state);
+	int updateState(Integer id, Boolean state);
+
+	/**
+	 * 添加用户
+	 *
+	 * @param user 用户对象
+	 * @return 受影响的行数
+	 */
+	int addUser(User user);
 }
