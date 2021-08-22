@@ -27,4 +27,10 @@
 			WHERE username LIKE #{username}
 		</if>
 	</select>
+	
+	<update id="updateState">
+		UPDATE easyuser
+		SET state = #{state}
+		WHERE id = #{id}
+	</update>
 </mapper>

@@ -34,4 +34,10 @@ public class UserServiceImpl implements UserService {
 	public Integer getUserCounts(String username) {
 		return userDao.getUserCounts(username);
 	}
+
+	@Override
+	public void updateState(Integer id, Boolean state) {
+		userDao.updateState(id, state);
+	}
+
 }

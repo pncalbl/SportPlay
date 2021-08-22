@@ -1,6 +1,6 @@
 package com.pncalbl.sportplay.controller;
 
-import com.alibaba.fastjson.JSON;
+import com.google.gson.Gson;
 import com.pncalbl.sportplay.pojo.User;
 import com.pncalbl.sportplay.service.UserService;
 import io.swagger.annotations.Api;
@@ -25,6 +25,8 @@ public class LoginController {
 	@Autowired
 	private UserService userService;
 
+	@Autowired
+	private Gson gson;
 
 	@ApiOperation("登录")
 	@RequestMapping("/login")
@@ -38,7 +40,6 @@ public class LoginController {
 		}
 		res.put("flag", flag);
 		res.put("user", us);
-		String res_json = JSON.toJSONString(res);
-		return res_json;
+		return gson.toJson(res);
 	}
 }

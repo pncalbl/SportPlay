@@ -1,6 +1,7 @@
 package com.pncalbl.sportplay.dao;
 
 import com.pncalbl.sportplay.pojo.User;
+import io.swagger.models.auth.In;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -37,8 +38,17 @@ public interface UserDao {
 
 	/**
 	 * 获取所有的用户总数
+	 *
 	 * @param username 用户名
 	 * @return 用户总数数
 	 */
 	Integer getUserCounts(@Param("username") String username);
+
+	/**
+	 * 更改用户状态
+	 *
+	 * @param id    用户 id
+	 * @param state 用户状态: 0-无效,1-有效
+	 */
+	void updateState(Integer id, Boolean state);
 }

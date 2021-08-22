@@ -1,6 +1,6 @@
 package com.pncalbl.sportplay.controller;
 
-import com.alibaba.fastjson.JSON;
+import com.google.gson.Gson;
 import com.pncalbl.sportplay.pojo.MainMenu;
 import com.pncalbl.sportplay.service.MenuService;
 import io.swagger.annotations.Api;
@@ -25,6 +25,9 @@ public class MenuController {
 	@Autowired
 	private MenuService menuService;
 
+	@Autowired
+	private Gson gson;
+
 	@RequestMapping("/menus")
 	public String getAllMenus() {
 		System.out.println("访问成功");
@@ -36,7 +39,6 @@ public class MenuController {
 			status = 200;
 		}
 		data.put("status", status);
-		String s = JSON.toJSONString(data);
-		return s;
+		return gson.toJson(data);
 	}
 }

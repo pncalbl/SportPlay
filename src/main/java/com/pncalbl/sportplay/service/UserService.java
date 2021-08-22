@@ -37,4 +37,12 @@ public interface UserService {
 	 * @return 用户总数
 	 */
 	Integer getUserCounts(@Param("username") String username);
+
+	/**
+	 * 更改用户状态
+	 *
+	 * @param id    用户 id
+	 * @param state 用户状态: 0-无效,1-有效
+	 */
+	void updateState(Integer id, Boolean state);
 }

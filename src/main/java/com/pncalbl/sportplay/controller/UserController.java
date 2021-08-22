@@ -1,12 +1,13 @@
 package com.pncalbl.sportplay.controller;
 
-import com.alibaba.fastjson.JSON;
+import com.google.gson.Gson;
 import com.pncalbl.sportplay.pojo.QueryInfo;
 import com.pncalbl.sportplay.pojo.User;
 import com.pncalbl.sportplay.service.UserService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -25,6 +26,9 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
+	@Autowired
+	private Gson gson;
+
 	@RequestMapping("/allUser")
 	public String getUserList(QueryInfo queryInfo) {
 		System.out.println(queryInfo);
@@ -35,7 +39,11 @@ public class UserController {
 		res.put("numbers", numbers);
 		res.put("data", users);
 		System.out.println("总条数：" + numbers);
-		String users_json = JSON.toJSONString(res);
-		return users_json;
+		return gson.toJson(res);
+	}
+
+	@RequestMapping("/")
+	public String updateUserState(@RequestParam("id") Integer id, @RequestParam("state") Boolean state) {
+		return "ok";
 	}
 }
