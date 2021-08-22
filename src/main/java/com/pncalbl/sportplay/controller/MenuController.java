@@ -4,10 +4,10 @@ import com.google.gson.Gson;
 import com.pncalbl.sportplay.pojo.MainMenu;
 import com.pncalbl.sportplay.service.MenuService;
 import io.swagger.annotations.Api;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 
@@ -22,10 +22,10 @@ import java.util.List;
 @Api(tags = "菜单栏管理")
 public class MenuController {
 
-	@Autowired
+	@Resource
 	private MenuService menuService;
 
-	@Autowired
+	@Resource
 	private Gson gson;
 
 	@RequestMapping("/menus")

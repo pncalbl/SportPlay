@@ -5,11 +5,11 @@ import com.pncalbl.sportplay.pojo.User;
 import com.pncalbl.sportplay.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.util.HashMap;
 
 /**
@@ -22,10 +22,10 @@ import java.util.HashMap;
 @Api(tags = "登录管理")
 public class LoginController {
 
-	@Autowired
+	@Resource
 	private UserService userService;
 
-	@Autowired
+	@Resource
 	private Gson gson;
 
 	@ApiOperation("登录")
