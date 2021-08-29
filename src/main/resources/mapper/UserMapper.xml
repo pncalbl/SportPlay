@@ -38,4 +38,24 @@
 		INSERT INTO easyuser(username, password, email, role, state)
 			VALUE (#{username}, #{password}, #{email}, #{role}, #{state})
 	</insert>
+	
+	<delete id="deleteUser">
+		DELETE
+		FROM easyuser
+		where id = #{id}
+	</delete>
+	
+	<select id="getUpdateUser" resultType="com.pncalbl.sportplay.pojo.User">
+		SELECT *
+		FROM easyuser
+		WHERE id = #{id}
+	</select>
+	
+	<update id="editUser">
+		UPDATE easyuser
+		SET username = #{username},
+		    password = #{password},
+		    email    = #{email}
+		WHERE id = #{id}
+	</update>
 </mapper>

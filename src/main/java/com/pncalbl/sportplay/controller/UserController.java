@@ -56,4 +56,22 @@ public class UserController {
 		int row = userService.addUser(user);
 		return row > 0 ? "success" : "error";
 	}
+
+	@RequestMapping("/deleteUser")
+	public String deleteUser(int id) {
+		int row = userService.deleteUser(id);
+		return row > 0 ? "success" : "error";
+	}
+
+	@RequestMapping("/getUpdateUser")
+	public String getUpdateUser(int id) {
+		User user = userService.getUpdateUser(id);
+		return gson.toJson(user);
+	}
+
+	@RequestMapping("/editUser")
+	public String editUser(@RequestBody User user) {
+		int row = userService.editUser(user);
+		return row > 0 ? "success" : "error";
+	}
 }

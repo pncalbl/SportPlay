@@ -49,7 +49,6 @@ public interface UserService {
 	 */
 	int updateState(Integer id, Boolean state);
 
-
 	/**
 	 * 添加用户
 	 *
@@ -57,4 +56,28 @@ public interface UserService {
 	 * @return 受影响的行数
 	 */
 	int addUser(User user);
+
+	/**
+	 * 删除用户
+	 *
+	 * @param id user Id
+	 * @return 受影响的行数
+	 */
+	int deleteUser(int id);
+
+	/**
+	 * 获取用户对象
+	 *
+	 * @param id user Id
+	 * @return 受影响的行数
+	 */
+	User getUpdateUser(int id);
+
+	/**
+	 * 修改用户
+	 *
+	 * @param user 用户对象
+	 * @return 受影响的行数
+	 */
+	int editUser(User user);
 }
