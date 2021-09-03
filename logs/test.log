@@ -13,4 +13,10 @@
 [m[31m2021-08-29 22:11:21[m [34m[http-nio-9000-exec-1][m [36mINFO [m:[32mInitializing Spring DispatcherServlet 'dispatcherServlet'
 [m[31m2021-08-29 22:11:31[m [34m[http-nio-9000-exec-8][m [36mINFO [m:[32mHikariPool-1 - Starting...
 [m[31m2021-08-29 22:11:32[m [34m[http-nio-9000-exec-8][m [36mINFO [m:[32mHikariPool-1 - Start completed.
+[m[31m2021-08-29 22:54:37[m [34m[HikariPool-1 housekeeper][m [36mWARN [m:[33mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m4s560ms572µs900ns).
+[m[31m2021-08-30 07:32:07[m [34m[HikariPool-1 housekeeper][m [36mWARN [m:[33mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h20m28s400ms773µs400ns).
+[m[31m2021-08-30 07:56:39[m [34m[HikariPool-1 housekeeper][m [36mWARN [m:[33mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m31s758ms855µs400ns).
+[m[31m2021-08-30 09:54:31[m [34m[HikariPool-1 housekeeper][m [36mWARN [m:[33mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h40m21s930ms652µs400ns).
+[m[31m2021-08-30 11:24:56[m [34m[HikariPool-1 housekeeper][m [36mWARN [m:[33mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m53s954ms102µs).
+[m[31m2021-08-30 18:29:19[m [34m[HikariPool-1 housekeeper][m [36mWARN [m:[33mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h6m21s574ms92µs100ns).
 [m
